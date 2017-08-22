@@ -1,5 +1,3 @@
-## WARNING: this is not finished and does not work :(
-
 # Allow Background Audio for iOS
 
 When included within a cordova/phonegap build then the application will not stop any background audio that is playing. Any application sounds will play over the background audio.
