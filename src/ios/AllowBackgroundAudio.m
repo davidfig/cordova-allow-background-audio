@@ -8,7 +8,11 @@
 @implementation AllowBackgroundAudio
 
 - (void)pluginInitialize {
-    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:nil];
+    NSError *error;
+    BOOL success = [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:&error];
+    if (!success) {
+        NSLog(@"%@", [error localizedDescription]);
+    }
 }
 
 @end
