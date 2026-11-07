@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "name": "cordova-allow-background-audio",
   "description": "Allow background audio from other apps to keep playing while a Cordova iOS app plays its own sounds.",
   "license": "MIT",
